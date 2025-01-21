@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ¡Vamos a Ganar!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .portada {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+
+        .portada img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #002855;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 360px;
+            height: 200px;
+            margin: 1rem 0;
+            border: none;
+        }
+
+        .animated-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .animated-img img {
+            width: 150px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #003366;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="portada">
+    <img src="PORTADA.jpg.jpg" alt="Imagen de Portada">
+</div>
+
+<header>
+    <h1>Lista Número 3 - ¡Vamos a Ganar!</h1>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#candidatos">Candidatos</a>
+    <a href="#propuestas">Propuestas</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contáctanos</a>
+</nav>
+
+<section id="inicio">
+    <h2>Lista #3 - ¡Vamos a Ganar!</h2>
+    <img src="candidato.jpg.jpg" alt="Candidato" style="width: 100%; border-radius: 10px;">
+</section>
+
+<section id="candidatos">
+    <h2>Candidatos</h2>
+    <img src="CANDIDATOS.JPG.jpg" alt="Candidatos" style="width: 100%; border-radius: 10px;">
+</section>
+
+<section id="propuestas">
+    <h2>Propuestas</h2>
+    <h3>Educación</h3>
+    <ul>
+        <li>Créditos estudiantiles y convenios con universidades nacionales y extranjeras para maestrías, doctorados y PHD, a bajos costos económicos.</li>
+        <li>Creación del Centro de Altos Estudios dentro del Colegio de Abogados del Guayas.</li>
+        <li>Escuela de capacitación para actualizar y reactualizar conocimientos en todas las materias a través de diplomados.</li>
+    </ul>
+    <h3>Social</h3>
+    <ul>
+        <li>Defensa gremial.</li>
+        <li>Creación del Cyber del Abogado con tecnología de punta para los colegas en el primer piso del Colegio de Abogados.</li>
+        <li>Construcción del auditorio y salón de eventos para uso permanente de todos los afiliados en el cuarto piso.</li>
+    </ul>
+    <h3>Deportivo</h3>
+    <ul>
+        <li>Casa club con salones de juegos, canto, baile y eventos sociales.</li>
+        <li>Ampliar el torneo existente y crear nuevos torneos.</li>
+        <li>Construcción de nuevas canchas para múltiples deportes.</li>
+        <li>Instalación de toboganes en el área de piscina.</li>
+        <li>Construcción de pista atlética.</li>
+    </ul>
+</section>
+
+<section id="videos">
+    <h2>Videos de Campaña</h2>
+    <div class="videos">
+        <iframe src="https://www.youtube.com/embed/dVn3DBaUvuU" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/iV7NB_GDvKs" allowfullscreen></iframe>
+    </div>
+    <div class="animated-img">
+        <img src="4d122fd2f166ba2f9e8819810a5bcbc8.jpg" alt="Personaje señalando Lista 3">
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Para más información, escríbenos a nuestro correo: <strong>lista3@campaña.com</strong></p>
+    <div class="animated-img">
+        <img src="istockphoto-1227346875-612x612.jpg" alt="Personaje señalando contacto">
+    </div>
+    <a href="mailto:lista3@campaña.com" class="button">Enviar Correo</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Lista Número 3 - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
